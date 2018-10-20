@@ -11,7 +11,7 @@ import tech.owly.owly.fragments.*
 class MainActivity : AppCompatActivity() {
 
     private val feedFragment = FeedFragment()
-    private val gradesFragment = GradesFragment()
+    private val gradesFragment = ModulesFragment()
     private val mailFragment = MailFragment()
     private val scheduleFragment = ScheduleFragment()
     private val settingsFragment = SettingsFragment()
@@ -25,13 +25,7 @@ class MainActivity : AppCompatActivity() {
 
         navigation.selectedItemId = R.id.navigation_feed
 
-        fragmentManager.beginTransaction()
-                .add(R.id.fragment_container, settingsFragment).hide(settingsFragment)
-                .add(R.id.fragment_container, gradesFragment).hide(gradesFragment)
-                .add(R.id.fragment_container, mailFragment).hide(mailFragment)
-                .add(R.id.fragment_container, scheduleFragment).hide(scheduleFragment)
-                .add(R.id.fragment_container, feedFragment).commit()
-
+        fragmentManager.beginTransaction().add(R.id.fragment_container, feedFragment).commit()
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
     }
 
@@ -47,7 +41,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showFragment(fragment: Fragment): Boolean {
-        fragmentManager.beginTransaction().hide(active).show(fragment).commit()
+        fragmentManager.beginTransaction().replace(R.id.fragment_container, fragment).commit()
         active = fragment
         return true
     }

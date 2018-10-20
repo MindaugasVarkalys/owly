@@ -10,8 +10,11 @@
     <!-- Feed -->
     <string name="open_navigation">Open navigation</string>
 
-    <!-- Grades -->
+    <!-- Modules -->
     <string name="view_all_grades">View all grades</string>
     <string name="latest_grade"><![CDATA[Latest grade: <b>%d</b>]]></string>
     <string name="no_grades">There are no grades yet</string>
+
+    <!-- Grades -->
+    <string name="average">Average: %.1f</string>
 </resources>
