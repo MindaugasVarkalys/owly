@@ -7,5 +7,11 @@
     <string name="schedule">Schedule</string>
     <string name="settings">Settings</string>
 
+    <!-- Feed -->
     <string name="open_navigation">Open navigation</string>
+
+    <!-- Grades -->
+    <string name="view_all_grades">View all grades</string>
+    <string name="latest_grade">Latest grade: <b>%d</b></string>
+    <string name="no_grades">There are no grades yet</string>
 </resources>

@@ -1,4 +1,4 @@
-package tech.owly.owly.data
+package tech.owly.owly.data.feed
 
 open class Message(
     val firstLine: String,

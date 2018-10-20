@@ -9,8 +9,8 @@ import kotlinx.android.synthetic.main.view_feed_card.view.*
 import kotlinx.android.synthetic.main.view_feed_lecture_card.view.*
 import kotlinx.android.synthetic.main.view_feed_message_card.view.*
 import tech.owly.owly.R
-import tech.owly.owly.data.Lecture
-import tech.owly.owly.data.Message
+import tech.owly.owly.data.feed.Lecture
+import tech.owly.owly.data.feed.Message
 
 
 class FeedRecyclerAdapter(private val messages : Array<Message>) : RecyclerView.Adapter<FeedRecyclerAdapter.ViewHolder>() {

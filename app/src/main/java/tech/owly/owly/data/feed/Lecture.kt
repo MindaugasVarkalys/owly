@@ -1,4 +1,4 @@
-package tech.owly.owly.data
+package tech.owly.owly.data.feed
 
 data class Lecture(
     val title: String,

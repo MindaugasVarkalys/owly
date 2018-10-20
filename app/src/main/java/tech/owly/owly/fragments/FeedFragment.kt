@@ -9,8 +9,8 @@ import android.view.ViewGroup
 import kotlinx.android.synthetic.main.fragment_feed.*
 import tech.owly.owly.R
 import tech.owly.owly.adapters.FeedRecyclerAdapter
-import tech.owly.owly.data.Lecture
-import tech.owly.owly.data.Message
+import tech.owly.owly.data.feed.Lecture
+import tech.owly.owly.data.feed.Message
 
 class FeedFragment : Fragment() {
 
