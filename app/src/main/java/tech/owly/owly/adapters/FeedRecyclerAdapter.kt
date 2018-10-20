@@ -33,6 +33,9 @@ class FeedRecyclerAdapter(private val messages : Array<Message>) : RecyclerView.
     }
 
     private fun setupMessageLines(layout: ConstraintLayout, message: Message) {
+        layout.lecture_card.visibility = View.GONE
+        layout.message_card.visibility = View.VISIBLE
+
         layout.line1.text = message.firstLine
         layout.line2.text = message.secondLine
         layout.line3.text = message.thirdLine
@@ -47,6 +50,8 @@ class FeedRecyclerAdapter(private val messages : Array<Message>) : RecyclerView.
 
     private fun setupLectureMessage(layout: ConstraintLayout, lecture: Lecture) {
         layout.lecture_card.visibility = View.VISIBLE
+        layout.message_card.visibility = View.GONE
+
         layout.lecture_upcoming.text = lecture.title
         layout.lecture_module.text = lecture.module
         layout.lecture_time.text = lecture.time
