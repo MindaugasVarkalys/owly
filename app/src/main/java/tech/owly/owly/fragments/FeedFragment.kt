@@ -42,5 +42,12 @@ class FeedFragment : Fragment() {
             layoutManager = LinearLayoutManager(context)
             adapter = FeedRecyclerAdapter(feedMessages)
         }
+
+        assistant_button.setOnClickListener {
+            fragmentManager!!.beginTransaction()
+                .replace(R.id.fragment_container, AssistantFragment())
+                .addToBackStack(null)
+                .commit()
+        }
     }
 }

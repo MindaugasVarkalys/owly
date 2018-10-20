@@ -4,15 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingTop="16dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
     tools:context=".fragments.FeedFragment">
-    
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_back_arrow" />
+
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/feed_list"
+        android:id="@+id/messages_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingTop="8dp"
-        android:paddingStart="8dp"
-        android:paddingEnd="8dp"
+        android:layout_marginTop="48dp"
+        android:paddingBottom="96dp"
         android:clipToPadding="false" />
 
     <TextView
@@ -20,9 +28,9 @@
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:layout_marginBottom="16dp"
-        android:background="@drawable/btn_mic"
-        app:layout_constraintBottom_toBottomOf="@+id/feed_list"
+        android:background="@drawable/btn_waves"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-    
+
 </android.support.constraint.ConstraintLayout>
