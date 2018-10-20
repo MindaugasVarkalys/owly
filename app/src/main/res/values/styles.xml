@@ -1,12 +1,14 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
+    <style name="AppTheme" parent="AppTheme.Base" />
 
     <style name="H1">
         <item name="android:fontFamily">@font/circular_black</item>
@@ -36,6 +38,10 @@
     <style name="Card">
         <item name="android:background">#AAAAAA</item>
         <item name="android:padding">@dimen/distance_2</item>
+    </style>
+
+    <style name="BottomNavigationBarTextAppearance">
+        <item name="android:fontFamily">@font/circular_book</item>
     </style>
 
 </resources>
