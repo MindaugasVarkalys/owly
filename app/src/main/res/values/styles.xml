@@ -8,4 +8,18 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="H1">
+        <item name="android:fontFamily">@font/circular_black</item>
+        <item name="android:textSize">36sp</item>
+    </style>
+
+    <style name="H2">
+        <item name="android:fontFamily">@font/circular_black</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="H3">
+        <item name="android:fontFamily">@font/circular_medium</item>
+        <item name="android:textSize">20sp</item>
+    </style>
 </resources>
