@@ -16,7 +16,7 @@
 
     <TextView
         android:id="@+id/line2"
-        style="@style/PrimaryText"
+        style="@style/PrimaryTextBold"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -25,7 +25,7 @@
 
     <TextView
         android:id="@+id/line3"
-        style="@style/SecondaryText"
+        style="@style/PrimaryText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"

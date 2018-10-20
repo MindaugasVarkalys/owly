@@ -1,6 +1,7 @@
 package tech.owly.owly.adapters
 
 import android.support.constraint.ConstraintLayout
+import android.support.v4.text.HtmlCompat
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -23,7 +24,7 @@ class GradesRecyclerAdapter(private val modules : Array<Module>) : RecyclerView.
         val context = holder.layout.context
         holder.layout.module.text = module.name
         if (module.lastGrade != null) {
-            holder.layout.latest_grade.text = context.getString(R.string.latest_grade, module.lastGrade)
+            holder.layout.latest_grade.text = HtmlCompat.fromHtml(context.getString(R.string.latest_grade, module.lastGrade), HtmlCompat.FROM_HTML_MODE_LEGACY)
         } else {
             holder.layout.latest_grade.text = context.getString(R.string.no_grades)
             holder.layout.view_all_grades.isEnabled = false

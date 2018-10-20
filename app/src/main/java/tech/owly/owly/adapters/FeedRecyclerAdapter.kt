@@ -38,8 +38,8 @@ class FeedRecyclerAdapter(private val messages : Array<Message>) : RecyclerView.
 
         layout.line1.text = message.firstLine
         layout.line2.text = message.secondLine
-        layout.line3.text = message.thirdLine
-        layout.line3.visibility = if (message.thirdLine.isNotEmpty()) View.VISIBLE else View.GONE
+        layout.line3.text = if (message.thirdLine.isNotEmpty()) message.thirdLine else message.secondLine
+        layout.line2.visibility = if (message.thirdLine.isNotEmpty()) View.VISIBLE else View.GONE
     }
 
     private fun setupMessageButtons(layout: ConstraintLayout, message: Message) {
