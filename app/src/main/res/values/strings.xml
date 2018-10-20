@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Owly</string>
+
+    <string name="mail">Mail</string>
+    <string name="grades">Grades</string>
+    <string name="feed">Feed</string>
+    <string name="schedule">Schedule</string>
+    <string name="settings">Settings</string>
 </resources>

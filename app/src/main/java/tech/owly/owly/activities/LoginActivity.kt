@@ -1,9 +1,10 @@
-package tech.owly.owly
+package tech.owly.owly.activities
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_login.*
+import tech.owly.owly.R
 
 class LoginActivity : AppCompatActivity() {
 
