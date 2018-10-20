@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/line1"
+        style="@style/H3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/distance_1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Line1" />
+
+    <TextView
+        android:id="@+id/line2"
+        style="@style/PrimaryText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/distance_1"
+        app:layout_constraintTop_toBottomOf="@+id/line1"
+        tools:text="Line2" />
+
+    <TextView
+        android:id="@+id/line3"
+        style="@style/PrimaryText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/distance_1"
+        app:layout_constraintTop_toBottomOf="@+id/line2"
+        tools:text="Line3" />
+
+    <TextView
+        android:id="@+id/button1"
+        style="@style/PrimaryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/distance_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line3"
+        tools:text="Button1" />
+
+    <TextView
+        android:id="@+id/button2"
+        style="@style/PrimaryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/distance_1"
+        android:layout_marginTop="@dimen/distance_1"
+        app:layout_constraintEnd_toStartOf="@+id/button1"
+        app:layout_constraintTop_toBottomOf="@+id/line3"
+        tools:text="Button2" />
+
+</android.support.constraint.ConstraintLayout>

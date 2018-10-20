@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/lecture_upcoming"
+        style="@style/H2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/distance_1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Upcoming lecture - 15 min" />
+
+    <TextView
+        android:id="@+id/lecture_module"
+        style="@style/H3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/distance_1"
+        app:layout_constraintTop_toBottomOf="@+id/lecture_upcoming"
+        tools:text="History of urban planning" />
+
+    <TextView
+        android:id="@+id/lecture_time"
+        style="@style/SecondaryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/distance_1"
+        android:layout_marginEnd="@dimen/distance_1"
+        android:layout_marginTop="@dimen/distance_1"
+        app:layout_constraintEnd_toStartOf="@+id/lecture_location"
+        app:layout_constraintStart_toEndOf="@+id/lecture_room"
+        app:layout_constraintTop_toBottomOf="@+id/lecture_module"
+        tools:text="15:30" />
+
+    <TextView
+        android:id="@+id/lecture_room"
+        style="@style/SecondaryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lecture_module"
+        android:layout_marginTop="@dimen/distance_1"
+        tools:text="311" />
+
+    <TextView
+        android:id="@+id/lecture_location"
+        style="@style/SecondaryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lecture_module"
+        android:layout_marginTop="@dimen/distance_1"
+        tools:text="Students' str. 48, IX building" />
+
+    <TextView
+        android:id="@+id/open_navigation"
+        style="@style/PrimaryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/distance_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lecture_location"
+        android:text="@string/open_navigation" />
+
+</android.support.constraint.ConstraintLayout>

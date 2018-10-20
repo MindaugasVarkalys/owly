@@ -23,11 +23,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        fragmentManager.beginTransaction().add(R.id.fragment_container, settingsFragment).hide(feedFragment).commit()
-        fragmentManager.beginTransaction().add(R.id.fragment_container, gradesFragment).hide(feedFragment).commit()
-        fragmentManager.beginTransaction().add(R.id.fragment_container, mailFragment).hide(feedFragment).commit()
-        fragmentManager.beginTransaction().add(R.id.fragment_container, scheduleFragment).hide(feedFragment).commit()
-        fragmentManager.beginTransaction().add(R.id.fragment_container, feedFragment).commit()
+        navigation.selectedItemId = R.id.navigation_feed
+
+        fragmentManager.beginTransaction()
+                .add(R.id.fragment_container, settingsFragment).hide(settingsFragment)
+                .add(R.id.fragment_container, gradesFragment).hide(gradesFragment)
+                .add(R.id.fragment_container, mailFragment).hide(mailFragment)
+                .add(R.id.fragment_container, scheduleFragment).hide(scheduleFragment)
+                .add(R.id.fragment_container, feedFragment).commit()
 
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
     }
