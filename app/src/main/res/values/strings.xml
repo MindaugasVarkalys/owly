@@ -17,4 +17,8 @@
 
     <!-- Grades -->
     <string name="average">Average: %.1f</string>
+
+    <!-- Assistant -->
+    <string name="ask_assistant">Ask Owly assistant</string>
+    <string name="first_message">Hi, what can I help you with?</string>
 </resources>

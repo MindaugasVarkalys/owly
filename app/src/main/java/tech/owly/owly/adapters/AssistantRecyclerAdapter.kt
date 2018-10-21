@@ -10,6 +10,8 @@ import tech.owly.owly.R
 
 class AssistantRecyclerAdapter : RecyclerView.Adapter<AssistantRecyclerAdapter.ViewHolder>() {
 
+    private val messages = mutableListOf<String>()
+
     class ViewHolder(val layout: ConstraintLayout) : RecyclerView.ViewHolder(layout)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -19,9 +21,21 @@ class AssistantRecyclerAdapter : RecyclerView.Adapter<AssistantRecyclerAdapter.V
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val botMessage = position % 2 == 0
-        holder.layout.bot_message.visibility = if (botMessage) View.VISIBLE else View.GONE
-        holder.layout.user_message.visibility = if (botMessage) View.GONE else View.VISIBLE
+        if (botMessage) {
+            holder.layout.bot_message.visibility = View.VISIBLE
+            holder.layout.user_message.visibility = View.GONE
+            holder.layout.bot_message.text = messages[position]
+        } else {
+            holder.layout.bot_message.visibility = View.GONE
+            holder.layout.user_message.visibility = View.VISIBLE
+            holder.layout.user_message.text = messages[position]
+        }
     }
 
-    override fun getItemCount() = 30
+    override fun getItemCount() = messages.size
+
+    public fun addMessage(message: String) {
+        messages.add(message)
+        notifyItemInserted(messages.size)
+    }
 }

@@ -1,7 +1,10 @@
 package tech.owly.owly.fragments
 
+import android.Manifest
+import android.content.pm.PackageManager
 import android.os.Bundle
 import android.support.v4.app.Fragment
+import android.support.v4.content.ContextCompat
 import android.support.v7.widget.LinearLayoutManager
 import android.view.LayoutInflater
 import android.view.View
@@ -44,10 +47,24 @@ class FeedFragment : Fragment() {
         }
 
         assistant_button.setOnClickListener {
-            fragmentManager!!.beginTransaction()
-                .replace(R.id.fragment_container, AssistantFragment())
-                .addToBackStack(null)
-                .commit()
+            if (ContextCompat.checkSelfPermission(context!!, Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED) {
+                requestPermissions(arrayOf(Manifest.permission.RECORD_AUDIO), 1)
+            } else {
+                openAssistant()
+            }
         }
+    }
+
+    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
+        if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+            openAssistant()
+        }
+    }
+
+    private fun openAssistant() {
+        fragmentManager!!.beginTransaction()
+            .replace(R.id.fragment_container, AssistantFragment())
+            .addToBackStack(null)
+            .commit()
     }
 }
