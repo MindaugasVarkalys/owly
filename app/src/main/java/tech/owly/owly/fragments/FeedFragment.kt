@@ -19,18 +19,11 @@ class FeedFragment : Fragment() {
 
     private val feedMessages = arrayOf(
             Lecture("Upcoming lecture - 15 min", "History of urban planning", "15:30", "311", "Students' str. 48, IX building"),
-            Message("Labas", "Rytas", "Vakaras", "123", "4560252"),
-            Message("Labas", "Rytas", "", "123", "4560252"),
-            Message("Labas", "Rytas", "Vakaras", "123"),
-            Message("Labas", "Rytas", "Vakaras", "123"),
-            Message("Labas", "Rytas", "Vakaras", "123", "4560252"),
-            Message("Labas", "Rytas", "", "123", "4560252"),
-            Message("Labas", "Rytas", "Vakaras", "123"),
-            Message("Labas", "Rytas", "Vakaras", "123"),
-            Message("Labas", "Rytas", "Vakaras", "123", "4560252"),
-            Message("Labas", "Rytas", "", "123", "4560252"),
-            Message("Labas", "Rytas", "Vakaras", "123"),
-            Message("Labas", "Rytas", "Vakaras", "123")
+            Message("Cancelled lecture", "Space syntax - tomorrow", "", "CONTACT PROFESSOR", ""),
+            Message("New grade", "Dendrology - you got a 9!", "", "GOT IT", "CONTACT PROFESSOR"),
+            Message("New mail", "Ludwig Mies van der Rohe", "Regarding excursion on 20th", "VIEW MESSAGE"),
+            Message("New mail", "Mindaugas Varkalys", "This is a test", "VIEW MESSAGE"),
+            Message("New mail", "Ludwig Mies van der Rohe", "Regarding excursion on 20th", "VIEW MESSAGE")
     )
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {

@@ -17,139 +17,39 @@ class ModulesFragment : Fragment() {
     private val modules = arrayOf(
             Module("Architectural experiment", listOf(
                     Grade("Test 1", 9),
-                    Grade("Test 1", 9),
-                    Grade("Test 1", 9),
-                    Grade("Test 1", 9),
-                    Grade("Test 1"),
-                    Grade("Test 1"),
-                    Grade("Test 1")
+                    Grade("Test 2", 10),
+                    Grade("Assignment 1", 9),
+                    Grade("Test 3"),
+                    Grade("Assignment 2"),
+                    Grade("Exam")
             )),
-            Module("Architectural experiment", listOf(
-                    Grade("Test 1", 9),
-                    Grade("Test 1", 9),
-                    Grade("Test 1", 9),
-                    Grade("Test 1", 9),
-                    Grade("Test 1"),
-                    Grade("Test 1"),
-                    Grade("Test 1")
+            Module("History of urban planning", listOf(
+                Grade("Test 1"),
+                Grade("Test 2"),
+                Grade("Assignment 1"),
+                Grade("Test 3"),
+                Grade("Assignment 2"),
+                Grade("Exam")
             )),
-            Module("Architectural experiment", listOf(
-                    Grade("Test 1", 9),
-                    Grade("Test 1", 9),
-                    Grade("Test 1", 9),
-                    Grade("Test 1", 9),
-                    Grade("Test 1"),
-                    Grade("Test 1"),
-                    Grade("Test 1")
+            Module("Space syntax", listOf(
+                Grade("Test 1", 9),
+                Grade("Test 2", 10),
+                Grade("Assignment"),
+                Grade("Exam")
             )),
-            Module("Architectural experiment", listOf(
-                    Grade("Test 1"),
-                    Grade("Test 1"),
-                    Grade("Test 1"),
-                    Grade("Test 1"),
-                    Grade("Test 1"),
-                    Grade("Test 1"),
-                    Grade("Test 1")
+            Module("Dendrology", listOf(
+                Grade("Test 1", 9),
+                Grade("Test 2", 10),
+                Grade("Assignment", 7),
+                Grade("Exam", 8)
             )),
-            Module("Architectural experiment", listOf(
-                    Grade("Test 1", 9),
-                    Grade("Test 1", 9),
-                    Grade("Test 1", 9),
-                    Grade("Test 1", 9),
-                    Grade("Test 1"),
-                    Grade("Test 1"),
-                    Grade("Test 1")
-            )),
-            Module("Architectural experiment", listOf(
-                    Grade("Test 1", 9),
-                    Grade("Test 1", 9),
-                    Grade("Test 1", 9),
-                    Grade("Test 1", 9),
-                    Grade("Test 1"),
-                    Grade("Test 1"),
-                    Grade("Test 1")
-            )),
-            Module("Architectural experiment", listOf(
-                    Grade("Test 1"),
-                    Grade("Test 1"),
-                    Grade("Test 1"),
-                    Grade("Test 1"),
-                    Grade("Test 1"),
-                    Grade("Test 1"),
-                    Grade("Test 1")
-            )),
-            Module("Architectural experiment", listOf(
-                    Grade("Test 1", 9),
-                    Grade("Test 1", 9),
-                    Grade("Test 1", 9),
-                    Grade("Test 1", 9),
-                    Grade("Test 1"),
-                    Grade("Test 1"),
-                    Grade("Test 1")
-            )),
-            Module("Architectural experiment", listOf(
-                    Grade("Test 1"),
-                    Grade("Test 1"),
-                    Grade("Test 1"),
-                    Grade("Test 1"),
-                    Grade("Test 1"),
-                    Grade("Test 1"),
-                    Grade("Test 1")
-            )),
-            Module("Architectural experiment", listOf(
-                    Grade("Test 1", 9),
-                    Grade("Test 1", 9),
-                    Grade("Test 1", 9),
-                    Grade("Test 1", 9),
-                    Grade("Test 1"),
-                    Grade("Test 1"),
-                    Grade("Test 1")
-            )),
-            Module("Architectural experiment", listOf(
-                    Grade("Test 1"),
-                    Grade("Test 1"),
-                    Grade("Test 1"),
-                    Grade("Test 1"),
-                    Grade("Test 1"),
-                    Grade("Test 1"),
-                    Grade("Test 1")
-            )),
-            Module("Architectural experiment", listOf(
-                    Grade("Test 1", 9),
-                    Grade("Test 1", 9),
-                    Grade("Test 1", 9),
-                    Grade("Test 1", 9),
-                    Grade("Test 1"),
-                    Grade("Test 1"),
-                    Grade("Test 1")
-            )),
-            Module("Architectural experiment", listOf(
-                    Grade("Test 1"),
-                    Grade("Test 1"),
-                    Grade("Test 1"),
-                    Grade("Test 1"),
-                    Grade("Test 1"),
-                    Grade("Test 1"),
-                    Grade("Test 1")
-            )),
-            Module("Architectural experiment", listOf(
-                    Grade("Test 1", 9),
-                    Grade("Test 1", 9),
-                    Grade("Test 1", 9),
-                    Grade("Test 1", 9),
-                    Grade("Test 1"),
-                    Grade("Test 1"),
-                    Grade("Test 1")
-            )),
-            Module("Architectural experiment", listOf(
-                    Grade("Test 1"),
-                    Grade("Test 1"),
-                    Grade("Test 1"),
-                    Grade("Test 1"),
-                    Grade("Test 1"),
-                    Grade("Test 1"),
-                    Grade("Test 1")
+            Module("Building constructions", listOf(
+                Grade("Test 1", 9),
+                Grade("Test 2"),
+                Grade("Assignment"),
+                Grade("Exam")
             ))
+
     )
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
