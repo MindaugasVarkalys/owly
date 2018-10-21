@@ -100,13 +100,15 @@ class AssistantFragment : Fragment(), TextToSpeech.OnInitListener {
         val words = message.toLowerCase().split(' ', ignoreCase = true)
         return when {
             containsWords(words, "what", "lecture") -> "Your next lecture is History of urban planning."
+            containsWords(words, "when", "lecture") -> "Your next lecture starts in 15 minutes. It's history of urban planning in Students' street 48, 9 building at room 311."
             containsWords(words,"where", "lecture") -> "Your lecture is in Students' street 48, 9 building at room 311."
             containsWords(words, "navigation") -> { startNavigation(); "Here you go!" }
             containsWords(words, "do", "have", "lectures") -> "Yes, you do."
             containsWords(words, "deadline") -> "The deadline was on 21st October 9 a.m. You are 3 hours late."
             containsWords(words, "average") -> "Your average grade is 9.2"
-            containsWords(words, "unread", "emails") -> "2"
-            else -> "What do you think?"
+            containsWords(words, "unread", "emails") -> "You have 2 unread emails."
+            containsWords(words, "canceled") -> "No, your professors did not report any canceled lectures so far."
+            else -> "Don't ask difficult questions. I am just a chatbot."
         }
     }
 
